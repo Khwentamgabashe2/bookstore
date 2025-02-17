@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us - T_Emblemy Collectible Books</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-4">
+    <h1>T_Emblemy Collectible Books</h1>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="books.html">Books</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="19th-century-books.html">19th Century Books</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="delivery.html">Delivery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form py-5">
+    <div class="container">
+      <h2 class="text-center" Contact Us>Conctact Us</h2>
+      <p class="text-center">If you have any questions, please feel free to reach out to us using the form below.</p>
+      
+      <!-- Contact Form -->
+      <form action="submit_contact_form.php" method="POST">
+        <div class="form-row">
+          <!-- Title -->
+          <div class="form-group col-md-4">
+            <label for="title">Title</label>
+            <select id="title" name="title" class="form-control" required>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+              <option value="Ms">Ms</option>
+              <option value="Dr">Dr</option>
+              <option value="Prof">Prof</option>
+            </select>
+          </div>
+
+          <!-- Name -->
+          <div class="form-group col-md-8">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <!-- Nature of Query -->
+        <div class="form-group">
+          <label for="query">Nature of Query</label>
+          <select id="query" name="query" class="form-control" required>
+            <option value="buy">Buy books</option>
+            <option value="sell">Sell books</option>
+            <option value="return">Return a book</option>
+            <option value="delivery">Delivery</option>
+            <option value="complaint">Complaint</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 T_Emblemy Collectible Books</p>
+  </footer>
+
+  <!-- Link to Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
